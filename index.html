@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>らくらく会 Web Site</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/contentsView.js"></script>
+</head>
+<body>
+	<header>
+		<h1 id="headTitle">らくらく会 Web Site</h1>
+	</header>
+	<nav class="navBar">
+		<ul class="parentBox">
+			<li class="parentColumn navItem" onclick="changeView('#home');">Home</li>
+			<li class="parentColumn navItem" onclick="changeView('#about');">About</li>
+			<li class="parentColumn navItem" onclick="changeView('#link');">Link</li>
+			<li class="parentColumn navItem" onclick="changeView('#contact');">Contact</li>
+		</ul>
+	</nav>
+	<section id="contents">
+		<section id="home">
+			とっぷぺーじ
+		</section>
+		<section id="about">
+			らくらく会について、書く
+		</section>
+		<section id="link">
+			GithubとかslackとかなんかいろいろLink
+		</section>
+		<section id="contact">
+			お問い合わせとか、書く
+		</section>
+	</section>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* 初期化用 */
+@import url(reset.css);
+
+/* 全体 */
+body {
+  width: 100%;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+
+  &>* {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/* ヘッダー */
+header {
+  height: 150px;
+  background: url("../img/logo.png");
+  background-repeat: no-repeat;
+
+  * {
+    margin-left: 150px;
+  }
+}
+
+/* メニューバー */
+.navBar {
+  height: 50px;
+
+  & > * {
+    height: inherit;
+    float: left;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  & > .parentBox {
+    & > .parentColumn {
+      background: #f90;
+      display: block;
+      float: left;
+      width: 140px;
+      height: 40px;
+      margin: 5px;
+      border-radius: 10px;
+      list-style: none;
+      text-align: center;
+      line-height: 40px;
+
+      &:hover {
+        background: #f70;
+      }
+    }
+  }
+
+  .navItem {
+    color: #fff;
+  }
+}
+
+/* コンテンツ */
+#contents {
+}
