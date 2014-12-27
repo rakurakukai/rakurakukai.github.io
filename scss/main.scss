@@ -9,19 +9,25 @@ body {
   font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 
   &>* {
-    width: 1000px;
+    width: 1050px;
     margin: 0 auto;
   }
 }
 
 /* ヘッダー */
 header {
-  height: 150px;
   background: url("../img/logo.png");
   background-repeat: no-repeat;
+  display: table;
+  height: 150px;
 
-  * {
-    margin-left: 150px;
+  #headTitle {
+    display: table-cell;
+    padding-left: 200px;
+    color: #f70;
+    font-size: 75px;
+    font-weight: bold;
+    vertical-align: bottom;
   }
 }
 
@@ -29,7 +35,7 @@ header {
 .navBar {
   height: 50px;
 
-  & > * {
+  &>* {
     height: inherit;
     float: left;
 
@@ -40,8 +46,8 @@ header {
     }
   }
 
-  & > .parentBox {
-    & > .parentColumn {
+  &>.parentBox {
+    &>.parentColumn {
       background: #f90;
       display: block;
       float: left;
@@ -64,6 +70,74 @@ header {
   }
 }
 
-/* コンテンツ */
+/* コンテンツ全体 */
 #contents {
+  margin: 20px auto;
+
+  &>section {
+    margin: 0 5px;
+
+    h1 {
+      height: 40px;
+      margin-top: 20px;
+      color: #f70;
+      font-size: 1.6em;
+      line-height: 40px;
+    }
+  }
+}
+
+/* Home */
+.home201412 {
+  margin: 20px 120px;
+}
+
+/* About */
+#about {
+  h2 {
+    background: url("../img/rakuraku_30px.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 35px;
+    border-bottom: 1px dotted #f70;
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+    padding-left: 40px;
+
+    &.annotation {
+      padding-left: 50px;
+    }
+  }
+}
+
+/* Link */
+#link {
+  p {
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+/* Contact */
+#contact {
+  p {
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+/* フッター */
+footer {
+  #copyright {
+    background: #f90;
+    margin: 5px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+  }
 }
