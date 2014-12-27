@@ -9,7 +9,7 @@ body {
   font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 
   &>* {
-    width: 1050px;
+    width: 900px;
     margin: 0 auto;
   }
 }
@@ -25,7 +25,7 @@ header {
     display: table-cell;
     padding-left: 200px;
     color: #f70;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: bold;
     vertical-align: bottom;
   }
@@ -89,7 +89,7 @@ header {
 
 /* Home */
 .home201412 {
-  margin: 20px 120px;
+  margin: 20px 45px;
 }
 
 /* About */
