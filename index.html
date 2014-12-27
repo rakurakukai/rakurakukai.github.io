@@ -2,8 +2,12 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>らくらく会 Web Site</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/smartPhone.css" media="screen and (min-width: 320px) and (max-width: 413px)">
+	<link rel="stylesheet" href="css/smartPhone.css" media="screen and (min-width: 414px) and (max-width: 500px)">
+	<link rel="stylesheet" href="css/main.css" media="screen and (min-width: 501px) and (max-width: 768px)">
+	<link rel="stylesheet" href="css/main.css" media="screen and (min-width: 769px)">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/contentsView.js"></script>
 </head>
@@ -18,7 +22,7 @@
 			<li class="parentColumn navItem">&nbsp;</li>
 			<li class="parentColumn navItem">&nbsp;</li>
 			<li class="parentColumn navItem" onclick="changeView('#link');">Link</li>
-			<li class="parentColumn navItem" onclick="changeView('#contact');">Contact</li>
+			<li id="toContact" class="parentColumn navItem" onclick="changeView('#contact');">Cont</li>
 		</ul>
 	</nav>
 	<section id="contents">
@@ -31,7 +35,7 @@
 			<h1>らくらく会について</h1>
 			<h2>＜らくらく会って？＞</h2>
 			<p>ラクスのメンバーとやるもくもく会です。</p>
-			<p>もくもく会については、「もくもく会ポータル（http://mokumokukai.tumblr.com/）」をご覧ください。</p>
+			<p>もくもく会については、<a href="http://mokumokukai.tumblr.com/">もくもく会ポータル</a>をご覧ください。</p>
 			<p>ざっくりいうと、どこかの場所に集まって、各自勉強や読書などの作業をもくもくとやる会のことです。</p>
 
 			<h2>＜いつやるの？＞</h2>
@@ -48,7 +52,8 @@
 			<p>[FBグループ参加=必ず出席]というわけではないので、お気軽に参加申請して頂ければ幸いです。</p>
 			<p class="annotation">
 				<a href="http://www.facebook.com/groups/rakurakukai/">らくらく会 Facebookグループ</a><br>
-				※プライベート用と分けたい方は、仕事用など別のアカウントを作って申請頂いても構いません。</p>
+				※プライベート用と分けたい方は、仕事用など別のアカウントを作って申請頂いても構いません。
+			</p>
 		</section>
 		<section id="link">
 			<p>準備中</p>

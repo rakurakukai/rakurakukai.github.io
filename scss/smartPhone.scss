@@ -7,25 +7,30 @@
 body {
   width: 100%;
   font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  padding: 50px 0;
 
   &>* {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
 /* ヘッダー */
 header {
-  background: url("../img/rakuraku.png");
-  background-repeat: no-repeat;
+  background: #fff;
   display: table;
-  height: 150px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   #headTitle {
+    background: url("../img/rakuraku.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
     display: table-cell;
-    padding-left: 175px;
+    padding-left: 75px;
     color: #f70;
-    font-size: 70px;
+    font-size: 20px;
     font-weight: bold;
     vertical-align: bottom;
   }
@@ -34,6 +39,9 @@ header {
 /* メニューバー */
 .navBar {
   height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 
   &>* {
     height: inherit;
@@ -47,26 +55,20 @@ header {
   }
 
   &>.parentBox {
+    width: 100%;
     &>.parentColumn {
       background: #f90;
       display: block;
       float: left;
-      width: 140px;
-      height: 40px;
-      margin: 5px;
-      border-radius: 10px;
+      width: 16.666666666666666%;
       list-style: none;
       text-align: center;
-      line-height: 40px;
+      line-height: 50px;
 
       &:hover {
         background: #f70;
       }
     }
-  }
-
-  #toContact::after {
-    content: "act";
   }
 
   .navItem {
@@ -93,7 +95,7 @@ header {
 
 /* Home */
 .home201412 {
-  margin: 20px 45px;
+  margin: 20px 0;
 }
 
 /* About */
@@ -112,10 +114,10 @@ header {
 
   p {
     margin-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
 
     &.annotation {
-      padding-left: 50px;
+      padding-left: 30px;
     }
   }
 }
@@ -124,7 +126,7 @@ header {
 #link {
   p {
     margin-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -132,7 +134,7 @@ header {
 #contact {
   p {
     margin-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -140,8 +142,6 @@ header {
 footer {
   #copyright {
     background: #f90;
-    margin: 5px;
-    border-radius: 10px;
     color: #fff;
     text-align: center;
   }
