@@ -60,7 +60,7 @@ header {
       background: #f90;
       display: block;
       float: left;
-      width: 16.666666666666666%;
+      width: 25%;
       list-style: none;
       text-align: center;
       line-height: 50px;
@@ -122,19 +122,45 @@ header {
   }
 }
 
-/* Link */
-#link {
-  p {
-    margin-top: 10px;
-    padding-left: 20px;
+/* LT資料 */
+#ltData {
+  .accordionBox {
+    margin: 20px;
   }
-}
 
-/* Contact */
-#contact {
-  p {
-    margin-top: 10px;
-    padding-left: 20px;
+  .accordionTitle {
+    background: #f90;
+    display: block;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+
+    &::before {
+      content: " ＋ ";
+    }
+
+    &:hover {
+      background: #f70;
+    }
+  }
+
+  .accordionItem {
+    display: none;
+    border-left: 1px solid #f90;
+    border-right: 1px solid #f90;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f90;
+    }
+
+    & > * {
+      padding-left: 20px;
+    }
   }
 }
 

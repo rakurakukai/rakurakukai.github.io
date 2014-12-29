@@ -9,7 +9,7 @@ body {
   font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 
   &>* {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
   }
 }
@@ -23,7 +23,7 @@ header {
 
   #headTitle {
     display: table-cell;
-    padding-left: 175px;
+    padding-left: 200px;
     color: #f70;
     font-size: 70px;
     font-weight: bold;
@@ -51,7 +51,7 @@ header {
       background: #f90;
       display: block;
       float: left;
-      width: 140px;
+      width: 240px;
       height: 40px;
       margin: 5px;
       border-radius: 10px;
@@ -63,10 +63,6 @@ header {
         background: #f70;
       }
     }
-  }
-
-  #toContact::after {
-    content: "act";
   }
 
   .navItem {
@@ -93,7 +89,7 @@ header {
 
 /* Home */
 .home201412 {
-  margin: 20px 45px;
+  margin: 20px 95px;
 }
 
 /* About */
@@ -120,19 +116,45 @@ header {
   }
 }
 
-/* Link */
-#link {
-  p {
-    margin-top: 10px;
-    padding-left: 40px;
+/* LT資料 */
+#ltData {
+  .accordionBox {
+    margin: 20px;
   }
-}
 
-/* Contact */
-#contact {
-  p {
-    margin-top: 10px;
-    padding-left: 40px;
+  .accordionTitle {
+    background: #f90;
+    display: block;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+
+    &::before {
+      content: " ＋ ";
+    }
+
+    &:hover {
+      background: #f70;
+    }
+  }
+
+  .accordionItem {
+    display: none;
+    border-left: 1px solid #f90;
+    border-right: 1px solid #f90;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f90;
+    }
+
+    & > * {
+      padding-left: 20px;
+    }
   }
 }
 
