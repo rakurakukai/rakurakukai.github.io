@@ -32,6 +32,12 @@ header {
     font-weight: bold;
     line-height: 100px;
   }
+
+  #headCurumi {
+    position: relative;
+    top: -72px;
+    left: 13%;
+  }
 }
 
 /* メニューバー */
@@ -88,7 +94,7 @@ header {
 }
 
 /* Home */
-.home201412 {
+.homeImage {
   margin: 20px 95px;
 }
 
