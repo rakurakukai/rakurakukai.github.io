@@ -23,6 +23,12 @@ header {
   top: 0;
   left: 0;
 
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
   #headTitle {
     background: url("../img/rakuraku.png");
     background-repeat: no-repeat;
@@ -40,6 +46,7 @@ header {
     top: 0;
     left: 85%;
     height: 90%;
+    float: left;
   }
 }
 

@@ -20,6 +20,12 @@ header {
   left: 0;
   box-shadow: rgba(9, 9, 9, 0.7) 0 0 3px 1px;
 
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
   #headTitle {
     background: url("../img/rakuraku.png");
     background-repeat: no-repeat;
@@ -37,6 +43,7 @@ header {
     position: relative;
     top: -72px;
     left: 13%;
+    float: left;
   }
 }
 
